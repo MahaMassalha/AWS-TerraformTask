@@ -27,7 +27,7 @@ resource "aws_security_group" "Hello-terra-ssh-http" {
 }
 
 
-# Create an instance for each application server
+# Create an ec2 instance for each application server
 resource "aws_instance" "app_server" {
   count          = var.c
   instance_type  = var.at
