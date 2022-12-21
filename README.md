@@ -24,12 +24,9 @@ Assumption: VPC and subnets already exist (No need to build a new network just u
   - Create an IAM user.
   - Create the access key under that IAM user.
 
-**First of all, To run the project locally you have to change the varibales value in the CreateAll.tf file, so it can fit your working Space.**
+####  To run the project locally you have to change the varibales value in the terraform files, so it can fit your working Space.
 
 
-- ## After creating AWS access key and secret, add them to the code in main.tf under provider "aws" .
-
- 
 
 ### Run Terraform using terminal :
 
