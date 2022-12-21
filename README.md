@@ -10,7 +10,7 @@ Assumption: VPC and subnets already exist (No need to build a new network just u
 
 ![image](https://user-images.githubusercontent.com/96788273/208508079-a5cf7bb0-5568-49a8-8813-cf4b5291e8f2.png)
 
-## Terraform code:
+
 
 
 
@@ -24,22 +24,11 @@ Assumption: VPC and subnets already exist (No need to build a new network just u
   - Create an IAM user.
   - Create the access key under that IAM user.
 
+**First of all, To run the project locally you have to change the varibales value in the CreateAll.tf file, so it can fit your working Space.**
 
 
 - ## After creating AWS access key and secret, add them to the code in main.tf under provider "aws" .
 
-- ## Create Security Group , to allow inbound web traffic.
-
-
-- ## create two instances .
-    
-- ## create target group & attach instances to target group:
-     the target status should be " Unused " (it'll take a while).
- 
-  
-- ## create load balancer(ALB) & listener :
-    make sure to add the Target group created before to the Listeners and routing -forward to .
-    now the target group status will change to healthy.
  
 
 ### Run Terraform using terminal :
@@ -59,10 +48,6 @@ run the code:
    ```
     terraform apply
    ```
- 
- - ####  In your AWS load balancer you'll see the new ALB,chick on the DNS address and open in a browser 
- 
-<img width="700" alt="screenshot" src="66.png">
 
    
   
